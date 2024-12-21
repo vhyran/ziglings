@@ -1,6 +1,4 @@
-<p align="center">
-  <h style="font-size:30px;">Data Structures and Algorithms in Zig</h>
-</p>
+# Data Structures and Algorithms in Zig
 
 Welcome to the **Data Structures and Algorithms (DSA)** repository implemented in the Zig programming language! This repository serves as a resource for anyone interested in learning about fundamental DSA concepts and their implementations in Zig.
 
