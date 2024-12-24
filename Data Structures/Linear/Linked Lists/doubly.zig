@@ -2,8 +2,8 @@ const std = @import("std");
 
 const Node = struct {
     value: i32,
-    prev: ?*Node, // Pointer to the previous node
-    next: ?*Node, // Pointer to the next node
+    prev: ?*Node,
+    next: ?*Node,
 };
 
 pub fn createNode(value: i32, allocator: *std.mem.Allocator) !*Node {
@@ -77,15 +77,12 @@ test "doubly linked list" {
 
     var head: ?*Node = null;
 
-    // Append values
     head = try append(head, 10, allocator);
     head = try append(head, 20, allocator);
     head = try append(head, 30, allocator);
 
-    // Prepend a value
     head = try prepend(head, 5, allocator);
 
-    // Verify values
     var current = head;
     const expected = [_]i32{ 5, 10, 20, 30 };
     var index: usize = 0;
@@ -97,12 +94,7 @@ test "doubly linked list" {
     }
     try std.testing.expect(index == 4);
 
-    // Print the list
     printList(head);
-
-    // Print in reverse
     printReverse(head);
-
-    // Free the list
     freeList(head, allocator);
 }
