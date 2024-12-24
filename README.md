@@ -20,7 +20,7 @@ These features make Zig a great choice for implementing efficient and predictabl
 
 ### Linear Data Structures
 - [x] Arrays
-- [] Linked Lists (Singly and Doubly)
+- [x] Linked Lists (Singly, Doubly and Circular)
 - [ ] Stacks
 - [ ] Queues (Simple and Circular)
 
