@@ -19,8 +19,8 @@ These features make Zig a great choice for implementing efficient and predictabl
 ## Implemented Data Structures
 
 ### Linear Data Structures
-- [ ] Arrays
-- [ ] Linked Lists (Singly and Doubly)
+- [x] Arrays
+- [] Linked Lists (Singly and Doubly)
 - [ ] Stacks
 - [ ] Queues (Simple and Circular)
 
@@ -59,14 +59,20 @@ These features make Zig a great choice for implementing efficient and predictabl
 
 ## Getting Started
 
+### Version
+- 0.13.0
+
+### Documentation
+You can find the official Zig [documentation](https://ziglang.org/documentation/0.13.0). This documentation provides comprehensive information about the Zig programming language, including its syntax, features, and standard library.
+
 ### Prerequisites
-- Install [Zig](https://ziglang.org/download/) on your system.
+Install [Zig](https://ziglang.org/download/) on your system.
 
 ### Compiling and Running Code
 To compile and run an implementation:
 
 ```bash
-zig build <filename>.zig
+zig build-exe <filename>.zig
 ./<filename>
 ```
 
