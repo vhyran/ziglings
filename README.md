@@ -16,47 +16,6 @@ Zig is a modern programming language designed for simplicity, performance, and r
 
 These features make Zig a great choice for implementing efficient and predictable data structures and algorithms.
 
-## Implemented Data Structures
-
-### Linear Data Structures
-- [x] Arrays
-- [x] Linked Lists (Singly, Doubly and Circular)
-- [ ] Stacks
-- [ ] Queues (Simple and Circular)
-
-### Non-Linear Data Structures
-- [ ] Trees (Binary Tree, Binary Search Tree, AVL Tree)
-- [ ] Heaps (Min-Heap, Max-Heap)
-- [ ] Graphs (Adjacency List, Adjacency Matrix)
-
-### Hashing
-- [ ] Hash Tables
-
-## Implemented Algorithms
-
-### Sorting Algorithms
-- [ ] Bubble Sort
-- [ ] Insertion Sort
-- [ ] Merge Sort
-- [ ] Quick Sort
-- [ ] Heap Sort
-
-### Searching Algorithms
-- [ ] Linear Search
-- [ ] Binary Search
-
-### Graph Algorithms
-- [ ] Breadth-First Search (BFS)
-- [ ] Depth-First Search (DFS)
-- [ ] Dijkstra’s Algorithm
-- [ ] Kruskal’s Algorithm
-- [ ] Prim’s Algorithm
-
-### Other Algorithms
-- [ ] Dynamic Programming (Examples: Fibonacci, Knapsack Problem)
-- [ ] Divide and Conquer (Examples: Merge Sort, Binary Search)
-- [ ] Backtracking (Examples: N-Queens, Sudoku Solver)
-
 ## Getting Started
 
 ### Version
