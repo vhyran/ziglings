@@ -21,9 +21,9 @@ pub fn main() !void {
     defer two_d.deinit();
 
     const static_two_d = [_][3]u8{
-        [3]u8{1, 2, 3},
-        [3]u8{4, 5, 6},
-        [3]u8{7, 8, 9},
+        [3]u8{ 1, 2, 3 },
+        [3]u8{ 4, 5, 6 },
+        [3]u8{ 7, 8, 9 },
     };
     for (static_two_d) |row| {
         var dynamic_row = std.ArrayList(u8).init(allocator);
@@ -32,7 +32,7 @@ pub fn main() !void {
         for (row) |value| {
             try dynamic_row.append(value);
         }
-        
+
         // Move ownership of `dynamic_row` to `two_d`
         try two_d.append(dynamic_row);
     }
@@ -40,8 +40,9 @@ pub fn main() !void {
     std.debug.print("\nTwo-Dimensional Array:\n", .{});
     for (two_d.items) |row| {
         for (row.items) |value| {
-            std.debug.print("{}\n", .{value});
+            std.debug.print("{} ", .{value});
         }
+        std.debug.print("\n", .{});
     }
 
     // Dynamic Three-Dimensional Array
@@ -50,12 +51,12 @@ pub fn main() !void {
 
     const static_three_d = [_][2][2]u8{
         [2][2]u8{
-            [2]u8{1, 2},
-            [2]u8{3, 4},
+            [2]u8{ 1, 2 },
+            [2]u8{ 3, 4 },
         },
         [2][2]u8{
-            [2]u8{5, 6},
-            [2]u8{7, 8},
+            [2]u8{ 5, 6 },
+            [2]u8{ 7, 8 },
         },
     };
     for (static_three_d) |matrix| {
@@ -78,8 +79,10 @@ pub fn main() !void {
     for (three_d.items) |matrix| {
         for (matrix.items) |row| {
             for (row.items) |value| {
-                std.debug.print("{}\n", .{value});
+                std.debug.print("{} ", .{value});
             }
+            std.debug.print("\n", .{});
         }
+        std.debug.print("\n", .{});
     }
 }
