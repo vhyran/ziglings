@@ -17,8 +17,9 @@ pub fn main() !void {
     std.debug.print("\nTwo-Dimensional Array:\n", .{});
     for (two_d) |row| {
         for (row) |value| {
-            std.debug.print("{}\n", .{value});
+            std.debug.print("{} ", .{value});
         }
+        std.debug.print("\n", .{});
     }
 
     // Three-Dimensional Array
@@ -36,8 +37,10 @@ pub fn main() !void {
     for (three_d) |matrix| {
         for (matrix) |row| {
             for (row) |value| {
-                std.debug.print("{}\n", .{value});
+                std.debug.print("{} ", .{value});
             }
+            std.debug.print("\n", .{});
         }
+        std.debug.print("\n", .{});
     }
 }
